@@ -47,6 +47,7 @@ export class CraftingGithubProvider implements vscode.AuthenticationProvider {
 				account: { id: 'pat-user', label: 'User' },
 				scopes,
 			};
+			this.sessions.push(session);
 			this._onDidChangeSessions.fire(
 				{
 					added: [session],

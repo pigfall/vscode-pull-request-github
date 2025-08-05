@@ -458,6 +458,9 @@ export class FolderRepositoryManager extends Disposable {
 			isAuthenticated = false;
 		}
 		vscode.commands.executeCommand('setContext', 'github:authenticated', isAuthenticated);
+		if (!isAuthenticated) {
+			vscode.commands.executeCommand('pr.signin');
+		}
 		return isAuthenticated;
 	}
 

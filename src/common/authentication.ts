@@ -12,7 +12,7 @@ export enum GitHubServerType {
 }
 
 export enum AuthProvider {
-	github = 'github',
+	github = 'crafting',
 	githubEnterprise = 'github-enterprise'
 }
 
